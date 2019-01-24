@@ -10,6 +10,10 @@ h2 {
   padding-top: 0;
 }
 
+nav {
+  background: #d0f7d0;
+}
+
 nav a {
   padding: 5px 10px;
   text-decoration: none;

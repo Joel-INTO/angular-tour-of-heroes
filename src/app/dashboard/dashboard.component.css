@@ -1,4 +1,8 @@
 /* DashboardComponent's private CSS styles */
+div, h3, .app-hero-search {
+  background: #e6b7b7;
+}
+
 [class*='col-'] {
   float: left;
   padding-right: 20px;
