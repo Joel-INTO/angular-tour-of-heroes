@@ -14,6 +14,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-serach/hero-serach.component';
+import { SelectComponent } from './select/select.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroSearchComponent } from './hero-serach/hero-serach.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
