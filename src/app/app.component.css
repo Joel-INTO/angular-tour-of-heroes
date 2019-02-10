@@ -22,7 +22,8 @@ nav a {
   background-color: #eee;
   border-radius: 4px;
 }
-nav a:visited, a:link {
+nav a:visited,
+a:link {
   color: #607d8b;
 }
 nav a:hover {
@@ -31,4 +32,11 @@ nav a:hover {
 }
 nav a.active {
   color: #039be5;
+}
+
+div.output-div {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  color: #000000;
 }

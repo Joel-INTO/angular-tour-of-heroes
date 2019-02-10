@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-select",
@@ -7,6 +7,9 @@ import { Component, OnInit } from "@angular/core";
 })
 export class SelectComponent implements OnInit {
   checkedElements = [];
+
+  @Output("update")
+  change: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() {}
 
@@ -31,7 +34,10 @@ export class SelectComponent implements OnInit {
       }
     }
 
-    console.log(this.checkedElements);
+    console.log(this.checkedElements[0]);
+    if (this.checkedElements.length > 0) {
+      this.change.emit(this.checkedElements[0]);
+    }
     this.togglePopover();
   }
 

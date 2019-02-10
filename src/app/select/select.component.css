@@ -1,7 +1,13 @@
-div {
+div.container {
   border: 1px solid black;
   padding: 10px;
   margin-top: 10px;
+}
+
+div,
+button,
+ul {
+  color: #000000;
 }
 
 ul {
