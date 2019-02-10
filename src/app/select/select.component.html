@@ -1,19 +1,20 @@
 <div>
-  <button (click)="popoverToggle()">Select counsellor</button>
-  <div class="list">
-    <ul>
+  <button (click)="popoverClicked()">Select counsellor</button>
+  <div class="list-container" hidden>
+    <ul class="counsellor-list">
       <li>
-        <input type="checkbox" name="geoff" />
+        <input class="counsellor" type="checkbox" name="geoff" />
         <label for="geoff">Geoff</label>
       </li>
       <li>
-        <input type="checkbox" name="bob" />
+        <input class="counsellor" type="checkbox" name="bob" />
         <label for="bob">Bob</label>
       </li>
       <li>
-        <input type="checkbox" name="phil" />
+        <input class="counsellor" type="checkbox" name="phil" />
         <label for="phil">Phil</label>
       </li>
     </ul>
+    <button (click)="submitClicked()">Submit</button>
   </div>
 </div>
