@@ -4,6 +4,6 @@
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
 </nav>
-<app-select (update)="readChange($event)"></app-select>
-<div class="output-div">Blah: {{ selectOutput }}</div>
+<app-select (update)="readChange($event)" [listItems]="items"></app-select>
+<div class="output-div">Output: {{ selectOutput }}</div>
 <router-outlet></router-outlet>

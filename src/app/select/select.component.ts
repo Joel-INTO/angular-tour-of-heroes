@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-select",
@@ -7,6 +7,9 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 })
 export class SelectComponent implements OnInit {
   checkedElements = [];
+
+  @Input()
+  listItems = "Initial value if NOT bound";
 
   @Output("update")
   change: EventEmitter<string> = new EventEmitter<string>();

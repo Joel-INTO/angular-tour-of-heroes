@@ -7,10 +7,11 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "Tour of Heroes";
-  selectOutput = "Initial value";
+  selectOutput = "Initial value binding";
+  items = "Hello";
 
   readChange(event) {
     console.log("Reading change: " + event);
-    this.selectOutput = "First element: " + event;
+    this.selectOutput = '"' + "First element: " + event + '"';
   }
 }
